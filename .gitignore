@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+
+git rm -r --cached chatbot/__pycache__
+git rm -r --cached utils/__pycache__
