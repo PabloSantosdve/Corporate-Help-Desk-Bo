@@ -1,0 +1,66 @@
+{
+    "senha": {
+        "palavras_chave": [
+            "senha",
+            "resetar",
+            "esqueci"
+        ],
+        "resposta": "Para resetar sua senha, acesse o portal de TI e clique em 'Esqueci minha senha'."
+    },
+    "vpn": {
+        "palavras_chave": [
+            "vpn",
+            "acesso remoto",
+            "conectar de casa"
+        ],
+        "resposta": "Para configurar a VPN, baixe o aplicativo oficial e use suas credenciais corporativas."
+    },
+    "email": {
+        "palavras_chave": [
+            "email",
+            "configuração",
+            "problema"
+        ],
+        "resposta": "Se você está enfrentando problemas com o email, verifique as configurações de servidor e tente reiniciar o aplicativo."
+    },
+    "wifi": {
+        "palavras_chave": [
+            "wifi",
+            "conexão",
+            "rede"
+        ],
+        "resposta": "Para problemas de conexão Wi-Fi, tente reiniciar o roteador e verificar se o dispositivo está dentro do alcance da rede."
+    },
+    "backup": {
+        "palavras_chave": [
+            "backup",
+            "salvar",
+            "recuperar"
+        ],
+        "resposta": "Para realizar um backup, utilize o software de backup recomendado pela empresa e siga as instruções fornecidas."
+    },
+    "antivirus": {
+        "palavras_chave": [
+            "antivírus",
+            "proteção",
+            "segurança"
+        ],
+        "resposta": "Certifique-se de que o antivírus esteja atualizado e execute uma verificação completa do sistema regularmente."
+    },
+    "impressora": {
+        "palavras_chave": [
+            "impressora",
+            "configuração",
+            "erro"
+        ],
+        "resposta": "Para configurar a impressora, siga o manual do fabricante e verifique se os drivers estão atualizados."
+    },
+    "software": {
+        "palavras_chave": [
+            "software",
+            "instalação",
+            "atualização"
+        ],
+        "resposta": "Para instalar ou atualizar o software, acesse o portal de TI e siga as instruções fornecidas."
+    }
+}

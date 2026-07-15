@@ -26,4 +26,3 @@ def salvar_json(caminho_arquivo, dados):
         return False
     except TypeError:
         return False
-    

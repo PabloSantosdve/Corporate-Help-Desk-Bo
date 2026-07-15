@@ -1,12 +1,7 @@
-from utils.file_manager import ler_json, salvar_json
+from chatbot.knowledge import buscar_resposta
 
-dados_teste = {"senha": "Para resetar sua senha, acesse o portal de TI."}
+print(buscar_resposta("esqueci minha senha"))
 
-salvou = salvar_json("data/teste.json", dados_teste)
-print("Salvou com sucesso?", salvou)
+print(buscar_resposta("qual o sentido da vida"))
 
-dados_lidos = ler_json("data/teste.json")
-print("Dados lidos:", dados_lidos)
-
-dados_fantasma = ler_json("data/arquivo_que_nao_existe.json")
-print("Dados de arquivo inexistente:", dados_fantasma)
+print(buscar_resposta("problema de configuração"))
