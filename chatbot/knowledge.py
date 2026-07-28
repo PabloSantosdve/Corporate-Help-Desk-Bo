@@ -21,4 +21,4 @@ def obter_resposta(categorias, encontrados):
     elif len(encontrados) > 1:
         respostas = [f"{categoria}: {categorias[categoria]['resposta']}" for categoria in encontrados]
         return "Encontrei múltiplas respostas:\n" + "\n".join(respostas)
-    
+     

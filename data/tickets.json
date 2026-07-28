@@ -1,0 +1,26 @@
+{
+    "TICKET- 0001": {
+        "nome": "João Silva",
+        "departamento": "TI",
+        "categoria": "Software",
+        "descricao": "Erro ao abrir o sistema.",
+        "status": "Aberto",
+        "data_abertura": "2026-07-27"
+    },
+    "TICKET- 0002": {
+        "nome": "João Silva",
+        "departamento": "TI",
+        "categoria": "Software",
+        "descricao": "Erro ao abrir o sistema.",
+        "status": "Aberto",
+        "data_abertura": "2026-07-27"
+    },
+    "TICKET- 0003": {
+        "nome": "Emanuelle Santos",
+        "departamento": "Wifi",
+        "categoria": "Sistema",
+        "descricao": "Erro ao tentar acessar o sistema de wifi",
+        "status": "Aberto",
+        "data_abertura": "2026-07-27"
+    }
+}
