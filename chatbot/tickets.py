@@ -14,8 +14,8 @@ def gerar_protocolo():
     tickets = ler_json("data/tickets.json")
     quantidade_atual = len(tickets)
     proximo_numero = quantidade_atual + 1
-    numero_formatado = str(proximo_numero).zfill(4)  # Preenche com zeros à esquerda para ter 4 dígitos
-    protocolo = "TICKET- " + numero_formatado
+    numero_formatado = str(proximo_numero).zfill(4)
+    protocolo = "TICKET-" + numero_formatado
     return protocolo
 
 def abrir_chamado(nome, departamento, categoria, descricao):
@@ -27,3 +27,10 @@ def abrir_chamado(nome, departamento, categoria, descricao):
     salvar_json("data/tickets.json", tickets)
 
     return protocolo
+
+def consultar_chamado(protocolo):
+    tickets = ler_json("data/tickets.json")
+    if protocolo in tickets:
+        return tickets[protocolo]
+    else:
+        return "Chamado não encontrado."

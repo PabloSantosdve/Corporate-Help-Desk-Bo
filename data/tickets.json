@@ -22,5 +22,37 @@
         "descricao": "Erro ao tentar acessar o sistema de wifi",
         "status": "Aberto",
         "data_abertura": "2026-07-27"
+    },
+    "TICKET-0004": {
+        "nome": "Pablo Henrique",
+        "departamento": "TI",
+        "categoria": "Software",
+        "descricao": "Erro ao abrir o sistema",
+        "status": "Aberto",
+        "data_abertura": "2026-07-28"
+    },
+    "TICKET-0005": {
+        "nome": "Pablo Henrique",
+        "departamento": "TI",
+        "categoria": "Software",
+        "descricao": "Erro ao abrir o sistema",
+        "status": "Aberto",
+        "data_abertura": "2026-07-28"
+    },
+    "TICKET-0006": {
+        "nome": "Pablo Henrique",
+        "departamento": "TI",
+        "categoria": "Software",
+        "descricao": "Erro ao abrir o sistema",
+        "status": "Aberto",
+        "data_abertura": "2026-07-28"
+    },
+    "TICKET-0007": {
+        "nome": "Pablo Henrique",
+        "departamento": "TI",
+        "categoria": "Software",
+        "descricao": "Erro ao tentar conectar ao sistema, e ao tentar abrir o sistema, ele fecha sozinho.",
+        "status": "Aberto",
+        "data_abertura": "2026-07-28"
     }
 }
