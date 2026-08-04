@@ -54,5 +54,13 @@
         "descricao": "Erro ao tentar conectar ao sistema, e ao tentar abrir o sistema, ele fecha sozinho.",
         "status": "Aberto",
         "data_abertura": "2026-07-28"
+    },
+    "TICKET-0008": {
+        "nome": "Pablão",
+        "departamento": "Comercial",
+        "categoria": "Erro no portal do colaborador",
+        "descricao": "Estou tentando acessar o portal do colaborador porem sem sucesso a pagina não carrega",
+        "status": "Aberto",
+        "data_abertura": "2026-08-03"
     }
 }

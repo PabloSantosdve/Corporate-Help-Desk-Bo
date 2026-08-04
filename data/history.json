@@ -2,5 +2,13 @@
     "2026-07-28 22:10:02": {
         "mensagem": "esqueci minha senha",
         "resposta": "Para redefinir sua senha, clique em 'Esqueci minha senha' na tela de login e siga as instruções."
+    },
+    "2026-08-03 22:11:47": {
+        "mensagem": "eSQUECI MINHA senha",
+        "resposta": "Encontrei uma resposta na categoria 'senha': Para resetar sua senha, acesse o portal de TI e clique em 'Esqueci minha senha'."
+    },
+    "2026-08-03 22:12:11": {
+        "mensagem": "VPN?",
+        "resposta": "Encontrei uma resposta na categoria 'vpn': Para configurar a VPN, baixe o aplicativo oficial e use suas credenciais corporativas."
     }
 }
