@@ -1,66 +1,86 @@
 {
     "senha": {
-        "palavras_chave": [
-            "senha",
-            "resetar",
-            "esqueci"
-        ],
-        "resposta": "Para resetar sua senha, acesse o portal de TI e clique em 'Esqueci minha senha'."
+        "palavras_chave": ["senha", "resetar", "esqueci", "trocar senha", "senha expirada"],
+        "resposta": "Para resetar sua senha, acesse o portal de TI e clique em 'Esqueci minha senha'. Caso o problema persista, entre em contato com o suporte."
     },
     "vpn": {
-        "palavras_chave": [
-            "vpn",
-            "acesso remoto",
-            "conectar de casa"
-        ],
-        "resposta": "Para configurar a VPN, baixe o aplicativo oficial e use suas credenciais corporativas."
+        "palavras_chave": ["vpn", "acesso remoto", "conectar de casa", "home office"],
+        "resposta": "Para configurar a VPN, baixe o aplicativo oficial e use suas credenciais corporativas. Em caso de falha de conexão, verifique sua internet local antes de abrir um chamado."
     },
     "email": {
-        "palavras_chave": [
-            "email",
-            "configuração",
-            "problema"
-        ],
-        "resposta": "Se você está enfrentando problemas com o email, verifique as configurações de servidor e tente reiniciar o aplicativo."
+        "palavras_chave": ["email", "e-mail", "configuração de email", "outlook"],
+        "resposta": "Se você está enfrentando problemas com o email, verifique as configurações de servidor e tente reiniciar o aplicativo. Para configurar um email novo, utilize o assistente automático do Outlook."
     },
     "wifi": {
-        "palavras_chave": [
-            "wifi",
-            "conexão",
-            "rede"
-        ],
+        "palavras_chave": ["wifi", "wi-fi", "conexão", "rede", "internet lenta"],
         "resposta": "Para problemas de conexão Wi-Fi, tente reiniciar o roteador e verificar se o dispositivo está dentro do alcance da rede."
     },
     "backup": {
-        "palavras_chave": [
-            "backup",
-            "salvar",
-            "recuperar"
-        ],
-        "resposta": "Para realizar um backup, utilize o software de backup recomendado pela empresa e siga as instruções fornecidas."
+        "palavras_chave": ["backup", "salvar", "recuperar", "restaurar arquivo", "perdi arquivo"],
+        "resposta": "Para realizar um backup, utilize o software de backup recomendado pela empresa e siga as instruções fornecidas. Para recuperar arquivos, acesse a pasta de backups automáticos ou abra um chamado com a TI."
     },
     "antivirus": {
-        "palavras_chave": [
-            "antivírus",
-            "proteção",
-            "segurança"
-        ],
-        "resposta": "Certifique-se de que o antivírus esteja atualizado e execute uma verificação completa do sistema regularmente."
+        "palavras_chave": ["antivirus", "antivírus", "proteção", "segurança", "vírus"],
+        "resposta": "Certifique-se de que o antivírus esteja atualizado e execute uma verificação completa do sistema regularmente. Se suspeitar de um vírus, desconecte o dispositivo da rede e acione a TI imediatamente."
     },
     "impressora": {
-        "palavras_chave": [
-            "impressora",
-            "configuração",
-            "erro"
-        ],
-        "resposta": "Para configurar a impressora, siga o manual do fabricante e verifique se os drivers estão atualizados."
+        "palavras_chave": ["impressora", "imprimir", "erro de impressão", "não imprime"],
+        "resposta": "Para configurar a impressora, siga o manual do fabricante e verifique se os drivers estão atualizados. Se a impressora não estiver imprimindo, confirme se ela está ligada e conectada à rede correta."
     },
     "software": {
-        "palavras_chave": [
-            "software",
-            "instalação",
-            "atualização"
-        ],
-        "resposta": "Para instalar ou atualizar o software, acesse o portal de TI e siga as instruções fornecidas."
+        "palavras_chave": ["software", "instalação", "atualização", "instalar programa"],
+        "resposta": "Para instalar ou atualizar o software, acesse o portal de TI e siga as instruções fornecidas. Instalações que exigem permissão de administrador devem ser solicitadas via chamado."
+    },
+    "ferias": {
+        "palavras_chave": ["férias", "solicitar férias", "saldo de férias", "programar férias"],
+        "resposta": "Para solicitar férias, acesse o portal de RH, selecione o período desejado e aguarde a aprovação do seu gestor. Você pode consultar seu saldo disponível na mesma tela."
+    },
+    "beneficios": {
+        "palavras_chave": ["benefícios", "vale refeição", "vale alimentação", "plano de saúde", "plano odontológico"],
+        "resposta": "As informações sobre benefícios (vale refeição, plano de saúde, plano odontológico, etc.) estão disponíveis no portal do colaborador, na seção 'Meus Benefícios'. Dúvidas específicas podem ser encaminhadas ao RH."
+    },
+    "holerite": {
+        "palavras_chave": ["holerite", "contracheque", "recibo de pagamento", "salario", "salário"],
+        "resposta": "Seu holerite fica disponível todo mês no portal do colaborador, na seção 'Financeiro'. Caso não encontre o documento, entre em contato com o setor de folha de pagamento."
+    },
+    "ponto": {
+        "palavras_chave": ["ponto", "bater ponto", "registro de ponto", "esqueci de bater o ponto"],
+        "resposta": "O registro de ponto deve ser feito pelo aplicativo ou totem da empresa. Caso tenha esquecido de bater o ponto, solicite o ajuste ao seu gestor através do portal de RH."
+    },
+    "contato_ti": {
+        "palavras_chave": ["contato ti", "telefone suporte", "falar com ti", "suporte tecnico", "suporte técnico"],
+        "resposta": "Você pode falar com o suporte de TI pelo ramal 4000, pelo chat interno ou abrindo um chamado diretamente por este chatbot."
+    },
+    "horario_atendimento": {
+        "palavras_chave": ["horario", "horário", "horario de atendimento", "expediente", "funcionamento"],
+        "resposta": "O horário de atendimento da TI e do RH é de segunda a sexta-feira, das 8h às 18h. Fora desse período, chamados urgentes podem ser abertos pelo plantão de emergência."
+    },
+    "acesso_sistema": {
+        "palavras_chave": ["acesso negado", "não consigo acessar", "sistema bloqueado", "usuario bloqueado", "usuário bloqueado"],
+        "resposta": "Se seu acesso a algum sistema foi negado ou bloqueado, verifique se sua senha está atualizada. Caso o problema continue, abra um chamado informando qual sistema está indisponível."
+    },
+    "onboarding": {
+        "palavras_chave": ["novo colaborador", "primeiro dia", "integração", "onboarding"],
+        "resposta": "Seja bem-vindo(a)! No primeiro dia, procure o RH para retirar seu crachá e receber as credenciais de acesso. O manual de integração está disponível no portal do colaborador."
+    },
+    "reembolso": {
+        "palavras_chave": ["reembolso", "nota fiscal", "despesa", "solicitar reembolso"],
+        "resposta": "Para solicitar reembolso de despesas, anexe a nota fiscal no portal financeiro e preencha o formulário de solicitação. O prazo de análise é de até 5 dias úteis."
+    },
+    "notebook": {
+        "palavras_chave": ["notebook", "computador", "equipamento", "trocar notebook", "notebook quebrado"],
+        "resposta": "Problemas com notebook ou equipamento corporativo devem ser reportados através de um chamado com a categoria 'Equipamento', informando o modelo e o defeito apresentado."
+    },
+    "sala_reuniao": {
+        "palavras_chave": ["sala de reunião", "reservar sala", "agendar sala"],
+        "resposta": "Para reservar uma sala de reunião, utilize o sistema de agendamento corporativo disponível no calendário compartilhado."
+    },
+    "crachao": {
+        "palavras_chave": ["crachá", "cracha", "cartão de acesso", "perdi o crachá"],
+        "resposta": "Em caso de perda do crachá, comunique imediatamente a portaria e abra um chamado com o RH para emissão de uma segunda via."
+    },
+    "desligamento": {
+        "palavras_chave": ["desligamento", "demissão", "rescisão", "aviso previo", "aviso prévio"],
+        "resposta": "Questões relacionadas a desligamento ou rescisão contratual devem ser tratadas diretamente com o RH, que fornecerá todas as orientações e prazos legais."
     }
 }
