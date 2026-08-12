@@ -17,7 +17,7 @@ def obter_resposta(categorias, encontrados):
         return "Desculpe, não encontrei uma resposta para a sua pergunta, por favor tente novamente ou entre em contato com o suporte."  
     elif len(encontrados) == 1:
         categoria = encontrados[0]
-        return f"Encontrei uma resposta na categoria '{categoria}': {categorias[categoria]['resposta']}"
+        return categorias[categoria]["resposta"]
     elif len(encontrados) > 1:
         respostas = [f"{categoria}: {categorias[categoria]['resposta']}" for categoria in encontrados]
         return "Encontrei múltiplas respostas:\n" + "\n".join(respostas)

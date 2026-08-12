@@ -10,5 +10,45 @@
     "2026-08-03 22:12:11": {
         "mensagem": "VPN?",
         "resposta": "Encontrei uma resposta na categoria 'vpn': Para configurar a VPN, baixe o aplicativo oficial e use suas credenciais corporativas."
+    },
+    "2026-08-05 22:01:11": {
+        "mensagem": "Senha ",
+        "resposta": "Encontrei uma resposta na categoria 'senha': Para resetar sua senha, acesse o portal de TI e clique em 'Esqueci minha senha'."
+    },
+    "2026-08-05 22:01:44": {
+        "mensagem": "Preciso fazer um backup para salvar um arquivo ",
+        "resposta": "Encontrei uma resposta na categoria 'backup': Para realizar um backup, utilize o software de backup recomendado pela empresa e siga as instruções fornecidas."
+    },
+    "2026-08-10 21:36:18": {
+        "mensagem": "Qual a minha senha?",
+        "resposta": "Encontrei uma resposta na categoria 'senha': Para resetar sua senha, acesse o portal de TI e clique em 'Esqueci minha senha'. Caso o problema persista, entre em contato com o suporte."
+    },
+    "2026-08-10 21:37:13": {
+        "mensagem": "Qual a senha que tem na minha maquina",
+        "resposta": "Encontrei uma resposta na categoria 'senha': Para resetar sua senha, acesse o portal de TI e clique em 'Esqueci minha senha'. Caso o problema persista, entre em contato com o suporte."
+    },
+    "2026-08-10 21:37:19": {
+        "mensagem": "Qual a senha que tem na minha maquina",
+        "resposta": "Encontrei uma resposta na categoria 'senha': Para resetar sua senha, acesse o portal de TI e clique em 'Esqueci minha senha'. Caso o problema persista, entre em contato com o suporte."
+    },
+    "2026-08-11 21:55:44": {
+        "mensagem": "Impressora",
+        "resposta": "Encontrei uma resposta na categoria 'impressora': Para configurar a impressora, siga o manual do fabricante e verifique se os drivers estão atualizados. Se a impressora não estiver imprimindo, confirme se ela está ligada e conectada à rede correta."
+    },
+    "2026-08-11 21:59:04": {
+        "mensagem": "Onde encontrar minha senha?",
+        "resposta": "Encontrei uma resposta na categoria 'senha': Para resetar sua senha, acesse o portal de TI e clique em 'Esqueci minha senha'. Caso o problema persista, entre em contato com o suporte."
+    },
+    "2026-08-11 21:59:22": {
+        "mensagem": "Onde encontrar minha senha?",
+        "resposta": "Encontrei uma resposta na categoria 'senha': Para resetar sua senha, acesse o portal de TI e clique em 'Esqueci minha senha'. Caso o problema persista, entre em contato com o suporte."
+    },
+    "2026-08-11 22:00:31": {
+        "mensagem": "Senha",
+        "resposta": "senha': Para resetar sua senha, acesse o portal de TI e clique em 'Esqueci minha senha'. Caso o problema persista, entre em contato com o suporte."
+    },
+    "2026-08-11 22:05:14": {
+        "mensagem": "senha",
+        "resposta": "Para resetar sua senha, acesse o portal de TI e clique em 'Esqueci minha senha'. Caso o problema persista, entre em contato com o suporte."
     }
 }

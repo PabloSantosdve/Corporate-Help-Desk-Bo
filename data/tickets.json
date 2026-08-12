@@ -62,5 +62,13 @@
         "descricao": "Estou tentando acessar o portal do colaborador porem sem sucesso a pagina não carrega",
         "status": "Aberto",
         "data_abertura": "2026-08-03"
+    },
+    "TICKET-0009": {
+        "nome": "Felipe Souza",
+        "departamento": "Pricing ",
+        "categoria": "Motor de Pricing ",
+        "descricao": "Estou encontrando problema para rodar o motor de pricing e definir as taxar do cliente",
+        "status": "Aberto",
+        "data_abertura": "2026-08-05"
     }
 }
