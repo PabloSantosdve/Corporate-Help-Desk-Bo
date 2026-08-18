@@ -70,5 +70,29 @@
         "descricao": "Estou encontrando problema para rodar o motor de pricing e definir as taxar do cliente",
         "status": "Aberto",
         "data_abertura": "2026-08-05"
+    },
+    "TICKET-0010": {
+        "nome": "Pablo Santos",
+        "departamento": "TI",
+        "categoria": "Impressora",
+        "descricao": "Impressora não esta imprimimdo",
+        "status": "Aberto",
+        "data_abertura": "2026-08-17"
+    },
+    "TICKET-0011": {
+        "nome": "Josiane",
+        "departamento": "Marketing",
+        "categoria": "Email",
+        "descricao": "Email não esta enviando mensagens",
+        "status": "Aberto",
+        "data_abertura": "2026-08-17"
+    },
+    "TICKET-0012": {
+        "nome": "Josiane",
+        "departamento": "Marketing",
+        "categoria": "Email",
+        "descricao": "Email não esta enviando mensagens",
+        "status": "Aberto",
+        "data_abertura": "2026-08-17"
     }
 }
