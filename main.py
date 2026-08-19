@@ -15,15 +15,21 @@ while menu:
     if opcao == "1":
         pergunta = input("Digite sua pergunta: ")
         resposta = chatbot.perguntar(pergunta)
-        print(f"Resposta: {resposta}")
+        print(resposta)
+
     elif opcao == "2":
         print("Abrindo um chamado...")
         nome = input("Digite seu nome: ")
         departamento = input("Digite seu departamento: ")
         categoria = input("Digite a categoria do problema: ")
         descricao = input("Descreva o problema: ")
-        protocolo = chatbot.abrir_chamado(nome, departamento, categoria, descricao)
-        print(f"Chamado aberto com sucesso! Protocolo: {protocolo}")
+
+        if not nome or not departamento or not categoria or not descricao:
+            print("Por favor, preencha todos os campos para abrir um chamado.")
+        else:
+            protocolo = chatbot.abrir_chamado(nome, departamento, categoria, descricao)
+            print(f"Chamado aberto com sucesso! Protocolo: {protocolo}")
+
     elif opcao == "3":
         print("Consultando um chamado existente...")
         protocolo = input("Digite o protocolo do chamado: ")
@@ -34,8 +40,11 @@ while menu:
             print(f"Departamento: {chamado['departamento']}")
             print(f"Categoria: {chamado['categoria']}")
             print(f"Descrição: {chamado['descricao']}")
+            print(f"Status: {chamado['status']}")
+            print(f"Data de Abertura: {chamado['data_abertura']}")
         else:
             print(chamado)
+
     elif opcao == "4":
         print("Obrigado por usar o Corporate Help Desk Bot!")
         menu = False

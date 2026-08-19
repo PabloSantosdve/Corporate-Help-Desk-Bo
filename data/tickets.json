@@ -94,5 +94,13 @@
         "descricao": "Email não esta enviando mensagens",
         "status": "Aberto",
         "data_abertura": "2026-08-17"
+    },
+    "TICKET-0013": {
+        "nome": "Ronaldo",
+        "departamento": "Produtos",
+        "categoria": "Plataforma fora do ar",
+        "descricao": "Estou tentando acessar a plataforma de produtos, porem ela sempre se encontra fora do ar",
+        "status": "Aberto",
+        "data_abertura": "2026-08-19"
     }
 }
