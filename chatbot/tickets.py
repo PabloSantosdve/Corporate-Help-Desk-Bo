@@ -29,7 +29,10 @@ def abrir_chamado(nome, departamento, categoria, descricao):
     return protocolo
 
 def consultar_chamado(protocolo):
-    protocolo = protocolo.upper()
+    protocolo = protocolo.strip().upper()
+    if not protocolo.startswith("TICKET-"):
+        protocolo = f"TICKET-{protocolo.zfill(4)}"
+
     tickets = ler_json("data/tickets.json")
     if protocolo in tickets:
         return tickets[protocolo]

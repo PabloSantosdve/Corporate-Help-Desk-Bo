@@ -12,8 +12,11 @@ COR_CARD = "#ffffff"
 
 def ao_clicar():
     pergunta = entrada.get()
-    resposta = chatbot.perguntar(pergunta)
-    resultado_pergunta.config(text=resposta)
+    if not pergunta.strip():
+        resultado_pergunta.config(text="Por favor, digite uma pergunta.")
+    else:
+        resposta = chatbot.perguntar(pergunta)
+        resultado_pergunta.config(text=resposta)
 
 
 def abrir_chamado_clicar():
@@ -22,17 +25,25 @@ def abrir_chamado_clicar():
     categoria = entrada_categoria.get()
     descricao = entrada_descricao.get()
 
-    if not nome or not departamento or not categoria or not descricao:
+    if not nome.strip() or not departamento.strip() or not categoria.strip() or not descricao.strip():
         resultado_chamado.config(text="Por favor, preencha todos os campos para abrir um chamado.")
     else:
         protocolo = chatbot.abrir_chamado(nome, departamento, categoria, descricao)
-        resultado_chamado.config(text=f"Chamado aberto com sucesso! Protocolo: {protocolo}")
+        texto = (
+            f"Chamado aberto com sucesso!\n"
+            f"Protocolo: {protocolo}\n"
+            f"Nome: {nome}\n"
+            f"Departamento: {departamento}\n"
+            f"Categoria: {categoria}\n"
+            f"Descrição: {descricao}"
+        )
+        resultado_chamado.config(text=texto)
 
 
 def consultar_chamado_clicar():
     protocolo = entrada_consultar.get()
-    if not protocolo:
-        resultado_consulta.config(text="Por favor, insira o protocolo para consultar o chamado.")
+    if not protocolo.strip():
+        resultado_consulta.config(text="Por favor, insira o número ou protocolo para consultar o chamado.")
     else:
         chamado = chatbot.consultar_chamado(protocolo)
         if isinstance(chamado, dict):
@@ -51,13 +62,13 @@ def consultar_chamado_clicar():
 
 janela = tk.Tk()
 janela.title("Corporate Help Desk Bot")
-janela.geometry("650x850")
+janela.geometry("650x880")
 janela.configure(bg=COR_FUNDO)
 
 titulo = tk.Label(janela, text="Corporate Help Desk Bot", font=("Arial", 22, "bold"), bg=COR_FUNDO, fg=COR_TITULO)
 titulo.pack(pady=20)
 
-#Perguntar 
+# Perguntar
 secao_pergunta = tk.Frame(janela, bg=COR_CARD, bd=1, relief="solid", padx=15, pady=15)
 secao_pergunta.pack(pady=10, padx=25, fill="x")
 
@@ -75,7 +86,7 @@ resultado_pergunta = tk.Label(secao_pergunta, text="", wraplength=550, font=("Ar
                                fg="#333333", justify="left")
 resultado_pergunta.pack(pady=5, anchor="w")
 
-#Abrir chamado
+# Abrir chamado
 secao_chamado = tk.Frame(janela, bg=COR_CARD, bd=1, relief="solid", padx=15, pady=15)
 secao_chamado.pack(pady=10, padx=25, fill="x")
 
@@ -110,7 +121,7 @@ resultado_chamado = tk.Label(secao_chamado, text="", wraplength=550, font=("Aria
                               fg="#333333", justify="left")
 resultado_chamado.pack(anchor="w")
 
-#Consultar o chamado
+# Consultar chamado
 secao_consulta = tk.Frame(janela, bg=COR_CARD, bd=1, relief="solid", padx=15, pady=15)
 secao_consulta.pack(pady=10, padx=25, fill="x")
 
@@ -122,6 +133,10 @@ label_consultar_chamado.pack(anchor="w", pady=(8, 0))
 entrada_consultar = tk.Entry(secao_consulta, font=("Arial", 11))
 entrada_consultar.pack(fill="x")
 
+label_dica_protocolo = tk.Label(secao_consulta, text="Dica: digite apenas o número (ex: 8) ou o protocolo completo (ex: TICKET-0008)",
+                                 font=("Arial", 9, "italic"), bg=COR_CARD, fg="#777777")
+label_dica_protocolo.pack(anchor="w", pady=(2, 0))
+
 botao_consultar = tk.Button(secao_consulta, text="Consultar Chamado", command=consultar_chamado_clicar,
                              bg=COR_BOTAO, fg="white", font=("Arial", 11, "bold"), relief="flat", padx=10, pady=5)
 botao_consultar.pack(pady=10)
@@ -130,7 +145,7 @@ resultado_consulta = tk.Label(secao_consulta, text="", wraplength=550, font=("Ar
                                fg="#333333", justify="left")
 resultado_consulta.pack(anchor="w")
 
-# ---------- Sair ----------
+# Sair
 botao_sair = tk.Button(janela, text="Sair", command=janela.destroy, bg=COR_SAIR, fg="white",
                         font=("Arial", 11), relief="flat", padx=10, pady=5)
 botao_sair.pack(pady=20)
