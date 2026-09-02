@@ -7,12 +7,31 @@
 </head>
 <body>
     <h1>Corporate Help Desk Bot</h1>
+
     <p>Bem-vindo ao nosso bot de suporte corporativo! Este bot foi projetado para ajudar os funcionários a resolver problemas comuns relacionados a Companhia e outros departamentos da empresa.</p>
+
     <p>Para começar, basta digitar sua pergunta ou problema na caixa de entrada abaixo e o bot fornecerá uma resposta ou direcionará você para o departamento apropriado.</p>
 
+    <h2>Faça sua Pergunta</h2>
     <form method="POST" action="/perguntar">
         <label for="question">Digite sua pergunta:</label><br>
         <input type="text" name="pergunta" placeholder="Digite sua Pergunta"><br><br>
         <button type="submit">Perguntar</button>
+    </form>
+    
+    <h2>Abrir Chamado</h2>
+        <form method="POST" action="/abrir-chamado">
+            <input type="text" name="nome" placeholder="Nome"><br>
+            <input type="text" name="departamento" placeholder="Departamento"><br>
+            <input type="text" name="categoria" placeholder="Categoria"><br>
+            <input type="text" name="descricao" placeholder="Descrição"><br>
+            <button type="submit">Abrir Chamado</button>
+        </form>
+    <h2>Consultar Chamado</h2>
+        <form method="POST" action="/consultar-chamado">
+            <input type="text" name="protocolo" placeholder="Número ou protocolo (ex: 8 ou TICKET-0008)">
+            <button type="submit">Consultar</button>
+        </form>
+    
 </body>
 </html>

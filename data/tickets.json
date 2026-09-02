@@ -102,5 +102,21 @@
         "descricao": "Estou tentando acessar a plataforma de produtos, porem ela sempre se encontra fora do ar",
         "status": "Aberto",
         "data_abertura": "2026-08-19"
+    },
+    "TICKET-0014": {
+        "nome": "Luiz Crazy Near",
+        "departamento": "Marketing",
+        "categoria": "Nem perco meu tempo ",
+        "descricao": "Muito feio",
+        "status": "Aberto",
+        "data_abertura": "2026-09-02"
+    },
+    "TICKET-0015": {
+        "nome": "Igor ",
+        "departamento": "Podpah",
+        "categoria": "Microfone falhando",
+        "descricao": "Microfone esta falhando",
+        "status": "Aberto",
+        "data_abertura": "2026-09-02"
     }
 }
