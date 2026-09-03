@@ -8,10 +8,6 @@ chatbot = ChatBot()
 def home():
     return render_template('index.html')
 
-@app.route('/sobre')
-def sobre():
-    return render_template('sobre.html')
-
 @app.route('/perguntar', methods=['POST'])
 def perguntar():
     pergunta = request.form['pergunta']
@@ -24,25 +20,52 @@ def abrir_chamado():
     departamento = request.form['departamento']
     categoria = request.form['categoria']
     descricao = request.form['descricao']
+
+    if not nome.strip() or not departamento.strip() or not categoria.strip() or not descricao.strip():
+        return render_template('resultado.html', titulo="Ops!",
+                               conteudo="Por favor, preencha todos os campos para abrir um chamado.", erro=True)
     protocolo = chatbot.abrir_chamado(nome, departamento, categoria, descricao)
-    return f"Chamado aberto com sucesso! Protocolo: {protocolo}"
+    conteudo = (
+        f"Chamado aberto com sucesso!<br>"
+        f"Protocolo: {protocolo}<br>"
+        f"Nome: {nome}<br>"
+        f"Departamento: {departamento}<br>"
+        f"Categoria: {categoria}<br>"
+        f"Descrição: {descricao}"
+    )
+    return render_template('resultado.html', titulo="Chamado Aberto", conteudo=conteudo, erro=False)
 
 @app.route('/consultar-chamado', methods=['POST'])
 def consultar_chamado():
     protocolo = request.form['protocolo']
+    if not protocolo.strip():
+        return render_template('resultado.html', titulo="Ops!",
+                               conteudo="Por favor, informe o protocolo para consultar o chamado.", erro=True)
     chamado = chatbot.consultar_chamado(protocolo)
+
     if isinstance(chamado, dict):
-        return (
-            f"Protocolo: {protocolo}<br>"
-            f"Nome: {chamado['nome']}<br>"
-            f"Departamento: {chamado['departamento']}<br>"
-            f"Categoria: {chamado['categoria']}<br>"
-            f"Descrição: {chamado['descricao']}<br>"
-            f"Status: {chamado['status']}<br>"
-            f"Data de Abertura: {chamado['data_abertura']}"
+        conteudo = (
+            f"<strong>Protocolo:</strong> {protocolo}<br>"
+            f"<strong>Nome:</strong> {chamado['nome']}<br>"
+            f"<strong>Departamento:</strong> {chamado['departamento']}<br>"
+            f"<strong>Categoria:</strong> {chamado['categoria']}<br>"
+            f"<strong>Descrição:</strong> {chamado['descricao']}<br>"
+            f"<strong>Status:</strong> {chamado['status']}<br>"
+            f"<strong>Data de Abertura:</strong> {chamado['data_abertura']}"
+        )
+        return render_template(
+            'resultado.html',
+            titulo="Chamado Encontrado",
+            conteudo=conteudo,
+            erro=False
         )
     else:
-        return chamado
+        return render_template(
+            'resultado.html',
+            titulo="Não Encontrado",
+            conteudo=chamado,
+            erro=True
+        )
     
 if __name__ == '__main__':
     app.run(debug=True)

@@ -118,5 +118,29 @@
         "descricao": "Microfone esta falhando",
         "status": "Aberto",
         "data_abertura": "2026-09-02"
+    },
+    "TICKET-0016": {
+        "nome": "Rodolfo ",
+        "departamento": "RH",
+        "categoria": "Sistema ao funcionario",
+        "descricao": "Sistema de assistencia ao funcionario não funciona",
+        "status": "Aberto",
+        "data_abertura": "2026-09-02"
+    },
+    "TICKET-0017": {
+        "nome": "Rodolfo ",
+        "departamento": "RH",
+        "categoria": "Sistema ao funcionario",
+        "descricao": "Sistema de assistencia ao funcionario não funciona",
+        "status": "Aberto",
+        "data_abertura": "2026-09-02"
+    },
+    "TICKET-0018": {
+        "nome": "Rodolfo ",
+        "departamento": "RH",
+        "categoria": "Sistema ao funcionario",
+        "descricao": "Sistema de assistencia ao funcionario não funciona",
+        "status": "Aberto",
+        "data_abertura": "2026-09-02"
     }
 }

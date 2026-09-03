@@ -78,5 +78,9 @@
     "2026-09-02 20:24:44": {
         "mensagem": "Esqeuci a senha",
         "resposta": "Para resetar sua senha, acesse o portal de TI e clique em 'Esqueci minha senha'. Caso o problema persista, entre em contato com o suporte."
+    },
+    "2026-09-02 21:10:38": {
+        "mensagem": "Esqueci minha senha",
+        "resposta": "Para resetar sua senha, acesse o portal de TI e clique em 'Esqueci minha senha'. Caso o problema persista, entre em contato com o suporte."
     }
 }

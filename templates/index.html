@@ -4,34 +4,197 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corporate Help Desk Bot</title>
+    <style>
+         * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 50%, #dbeafe 100%);
+            color: #1e293b;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            color: #1e3a5f;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            color: #64748b;
+            font-size: 0.98rem;
+            max-width: 480px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 24px;
+            box-shadow: 0 8px 24px rgba(30, 58, 95, 0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 12px 32px rgba(30, 58, 95, 0.12);
+        }
+
+        .card-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: #2e6ff2;
+            color: white;
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+        }
+
+        .card h2 {
+            font-size: 1.15rem;
+            color: #1e3a5f;
+            margin: 0 0 16px 0;
+        }
+
+        label {
+            display: block;
+            font-size: 0.85rem;
+            color: #475569;
+            margin-bottom: 4px;
+            margin-top: 12px;
+            font-weight: 600;
+        }
+
+        label:first-of-type {
+            margin-top: 0;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 11px 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            background-color: rgba(255, 255, 255, 0.8);
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #2e6ff2;
+            box-shadow: 0 0 0 3px rgba(46, 111, 242, 0.15);
+        }
+
+        .hint {
+            font-size: 0.78rem;
+            color: #94a3b8;
+            margin-top: 4px;
+            font-style: italic;
+        }
+
+        button {
+            margin-top: 18px;
+            background: linear-gradient(135deg, #2e6ff2, #1d54c9);
+            color: white;
+            border: none;
+            padding: 11px 22px;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(46, 111, 242, 0.3);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        footer {
+            text-align: center;
+            color: #94a3b8;
+            font-size: 0.8rem;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Corporate Help Desk Bot</h1>
+     <div class="container">
+        <header>
+            <h1>Corporate Help Desk Bot</h1>
+            <p>Bem-vindo ao suporte corporativo! Pergunte, abra ou consulte chamados de forma rápida e simples.</p>
+        </header>
 
-    <p>Bem-vindo ao nosso bot de suporte corporativo! Este bot foi projetado para ajudar os funcionários a resolver problemas comuns relacionados a Companhia e outros departamentos da empresa.</p>
+        <div class="card">
+            <div class="card-icon">💬</div>
+            <h2>Fazer uma pergunta</h2>
+            <form method="POST" action="/perguntar">
+                <label for="pergunta">Digite sua pergunta</label>
+                <input type="text" id="pergunta" name="pergunta" placeholder="Ex: esqueci minha senha">
+                <button type="submit">Perguntar</button>
+            </form>
+        </div>
 
-    <p>Para começar, basta digitar sua pergunta ou problema na caixa de entrada abaixo e o bot fornecerá uma resposta ou direcionará você para o departamento apropriado.</p>
+        <div class="card">
+            <div class="card-icon">📩</div>
+            <h2>Abrir chamado</h2>
+            <form method="POST" action="/abrir-chamado">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
 
-    <h2>Faça sua Pergunta</h2>
-    <form method="POST" action="/perguntar">
-        <label for="question">Digite sua pergunta:</label><br>
-        <input type="text" name="pergunta" placeholder="Digite sua Pergunta"><br><br>
-        <button type="submit">Perguntar</button>
-    </form>
-    
-    <h2>Abrir Chamado</h2>
-        <form method="POST" action="/abrir-chamado">
-            <input type="text" name="nome" placeholder="Nome"><br>
-            <input type="text" name="departamento" placeholder="Departamento"><br>
-            <input type="text" name="categoria" placeholder="Categoria"><br>
-            <input type="text" name="descricao" placeholder="Descrição"><br>
-            <button type="submit">Abrir Chamado</button>
-        </form>
-    <h2>Consultar Chamado</h2>
-        <form method="POST" action="/consultar-chamado">
-            <input type="text" name="protocolo" placeholder="Número ou protocolo (ex: 8 ou TICKET-0008)">
-            <button type="submit">Consultar</button>
-        </form>
-    
+                <label for="departamento">Departamento</label>
+                <input type="text" id="departamento" name="departamento" placeholder="Ex: TI, RH, Comercial">
+
+                <label for="categoria">Categoria</label>
+                <input type="text" id="categoria" name="categoria" placeholder="Ex: Software, Impressora">
+
+                <label for="descricao">Descrição</label>
+                <input type="text" id="descricao" name="descricao" placeholder="Descreva o problema">
+
+                <button type="submit">Abrir Chamado</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🔍</div>
+            <h2>Consultar chamado</h2>
+            <form method="POST" action="/consultar-chamado">
+                <label for="protocolo">Protocolo</label>
+                <input type="text" id="protocolo" name="protocolo" placeholder="Ex: 8 ou TICKET-0008">
+                <p class="hint">Dica: digite apenas o número ou o protocolo completo</p>
+                <button type="submit">Consultar</button>
+            </form>
+        </div>
+
+        <footer>
+            Corporate Help Desk Bot — projeto desenvolvido em Python
+        </footer>
+    </div>
 </body>
 </html>
