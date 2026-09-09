@@ -6,7 +6,7 @@ Este é um projeto de **aprendizado e portfólio**: toda a lógica é implementa
 
 ---
 
-## 📋 Funcionalidades
+## Funcionalidades
 
 - **Base de Conhecimento**: responde dúvidas frequentes de TI e RH (senha, VPN, benefícios, férias, impressora, entre outras) buscando por palavras-chave.
 - **Abertura de Chamados**: registra nome, departamento, categoria e descrição do problema, gerando um número de protocolo único automaticamente.
@@ -17,7 +17,7 @@ Disponível em **três interfaces diferentes**, todas reutilizando a mesma lógi
 
 ---
 
-## 🖥️ Versões do projeto
+## Versões do projeto
 
 | Versão | Interface | Status |
 |---|---|---|
@@ -29,7 +29,7 @@ Disponível em **três interfaces diferentes**, todas reutilizando a mesma lógi
 
 ---
 
-## 🏗️ Arquitetura do projeto
+## Arquitetura do projeto
 
 ```text
 corporate-helpdesk-bot/
@@ -66,7 +66,7 @@ corporate-helpdesk-bot/
 
 ---
 
-## 🚀 Como executar
+## Como executar
 
 ### Pré-requisitos
 
@@ -104,7 +104,7 @@ Depois, acesse `http://127.0.0.1:5000` no navegador.
 
 ---
 
-## 🧠 Aprendizados aplicados neste projeto
+## Aprendizados aplicados neste projeto
 
 - Estruturas de decisão e repetição (`if`/`elif`/`else`, `while`, `for`)
 - Tratamento de exceções (`try`/`except`)
