@@ -1,12 +1,11 @@
 import datetime
-from utils.file_manager import ler_json, salvar_json
+import sqlite3
 
 def registrar_interacao(mensagem, resposta):
     data_hora = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-    historico = ler_json("data/history.json")
-    historico[data_hora] = {
-        "mensagem": mensagem,
-        "resposta": resposta
-    }
-    salvar_json("data/history.json", historico)
+    conexao = sqlite3.connect('data/database.db')
+    cursor = conexao.cursor()
+    cursor.execute("INSERT INTO history (data_hora, mensagem, resposta) VALUES (?, ?, ?)",
+                   (data_hora, mensagem, resposta))
+    conexao.commit()
+    conexao.close()
