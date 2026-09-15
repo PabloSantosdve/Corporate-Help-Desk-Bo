@@ -1,86 +1,202 @@
 {
     "senha": {
-        "palavras_chave": ["senha", "resetar", "esqueci", "trocar senha", "senha expirada"],
-        "resposta": "Para resetar sua senha, acesse o portal de TI e clique em 'Esqueci minha senha'. Caso o problema persista, entre em contato com o suporte."
+        "palavras_chave": ["senha", "resetar", "esqueci", "trocar senha", "senha expirada", "redefinir senha"],
+        "resposta": "Sem problemas, isso acontece com todo mundo! Para resetar sua senha, acesse o portal de TI e clique em 'Esqueci minha senha'. Você vai receber um link de redefinição no seu e-mail corporativo em poucos minutos. Se o link não chegar ou o problema persistir, é só abrir um chamado que a equipe de TI te ajuda rapidinho."
     },
     "vpn": {
-        "palavras_chave": ["vpn", "acesso remoto", "conectar de casa", "home office"],
-        "resposta": "Para configurar a VPN, baixe o aplicativo oficial e use suas credenciais corporativas. Em caso de falha de conexão, verifique sua internet local antes de abrir um chamado."
+        "palavras_chave": ["vpn", "acesso remoto", "conectar de casa", "home office", "vpn não conecta"],
+        "resposta": "Para acessar os sistemas da empresa de fora do escritório, baixe o aplicativo oficial de VPN e entre com suas credenciais corporativas normais. Se a conexão falhar, o primeiro passo é verificar sua internet local — muitas vezes o problema está na rede Wi-Fi de casa. Persistindo o erro, abra um chamado informando a mensagem de erro exibida."
     },
     "email": {
-        "palavras_chave": ["email", "e-mail", "configuração de email", "outlook"],
-        "resposta": "Se você está enfrentando problemas com o email, verifique as configurações de servidor e tente reiniciar o aplicativo. Para configurar um email novo, utilize o assistente automático do Outlook."
+        "palavras_chave": ["email", "e-mail", "configuração de email", "outlook", "não recebo email"],
+        "resposta": "Problemas com e-mail geralmente se resolvem verificando as configurações de servidor e reiniciando o aplicativo Outlook. Se você está configurando um e-mail novo, use o assistente automático do Outlook, que já vem com os dados da empresa pré-configurados. Caso não esteja recebendo mensagens, confira também a pasta de spam antes de abrir um chamado."
     },
     "wifi": {
-        "palavras_chave": ["wifi", "wi-fi", "conexão", "rede", "internet lenta"],
-        "resposta": "Para problemas de conexão Wi-Fi, tente reiniciar o roteador e verificar se o dispositivo está dentro do alcance da rede."
+        "palavras_chave": ["wifi", "wi-fi", "conexão", "rede", "internet lenta", "sem internet"],
+        "resposta": "Para problemas de conexão Wi-Fi no escritório, o primeiro passo é sempre reiniciar o dispositivo e verificar se você está dentro do alcance da rede correta. Se a internet estiver lenta para todo o setor (não só para você), pode ser uma instabilidade geral — nesse caso, vale abrir um chamado para que a TI verifique o roteador da área."
     },
     "backup": {
-        "palavras_chave": ["backup", "salvar", "recuperar", "restaurar arquivo", "perdi arquivo"],
-        "resposta": "Para realizar um backup, utilize o software de backup recomendado pela empresa e siga as instruções fornecidas. Para recuperar arquivos, acesse a pasta de backups automáticos ou abra um chamado com a TI."
+        "palavras_chave": ["backup", "salvar", "recuperar", "restaurar arquivo", "perdi arquivo", "arquivo apagado"],
+        "resposta": "Para realizar um backup, utilize o software recomendado pela empresa e siga as instruções do assistente — o processo é automático e leva poucos minutos. Se você perdeu um arquivo, não entre em pânico: acesse a pasta de backups automáticos, onde versões recentes costumam ficar salvas. Se não encontrar o que precisa, abra um chamado com a TI o quanto antes."
     },
     "antivirus": {
-        "palavras_chave": ["antivirus", "antivírus", "proteção", "segurança", "vírus"],
-        "resposta": "Certifique-se de que o antivírus esteja atualizado e execute uma verificação completa do sistema regularmente. Se suspeitar de um vírus, desconecte o dispositivo da rede e acione a TI imediatamente."
+        "palavras_chave": ["antivirus", "antivírus", "proteção", "segurança", "vírus", "computador infectado"],
+        "resposta": "Mantenha sempre o antivírus atualizado e rode uma verificação completa periodicamente — isso evita boa parte dos problemas. Se você suspeitar de um vírus ou comportamento estranho no computador, desconecte o dispositivo da rede imediatamente e acione a TI, para evitar que o problema se espalhe para outros equipamentos."
     },
     "impressora": {
-        "palavras_chave": ["impressora", "imprimir", "erro de impressão", "não imprime"],
-        "resposta": "Para configurar a impressora, siga o manual do fabricante e verifique se os drivers estão atualizados. Se a impressora não estiver imprimindo, confirme se ela está ligada e conectada à rede correta."
+        "palavras_chave": ["impressora", "imprimir", "erro de impressão", "não imprime", "impressora sem tinta"],
+        "resposta": "Para configurar uma impressora nova, siga o manual do fabricante e confirme se os drivers estão atualizados. Se a impressora não estiver imprimindo, verifique se está ligada, conectada à rede correta e se há papel e tinta suficientes. Persistindo o erro, abra um chamado informando o modelo da impressora e a mensagem de erro exibida."
     },
     "software": {
-        "palavras_chave": ["software", "instalação", "atualização", "instalar programa"],
-        "resposta": "Para instalar ou atualizar o software, acesse o portal de TI e siga as instruções fornecidas. Instalações que exigem permissão de administrador devem ser solicitadas via chamado."
+        "palavras_chave": ["software", "instalação", "atualização", "instalar programa", "programa não abre"],
+        "resposta": "Para instalar ou atualizar qualquer software, acesse o portal de TI e siga as instruções — muitos programas já estão disponíveis para instalação automática. Instalações que exigem permissão de administrador precisam ser solicitadas via chamado, já que por segurança nem todo colaborador tem essa permissão liberada por padrão."
     },
     "ferias": {
-        "palavras_chave": ["férias", "solicitar férias", "saldo de férias", "programar férias"],
-        "resposta": "Para solicitar férias, acesse o portal de RH, selecione o período desejado e aguarde a aprovação do seu gestor. Você pode consultar seu saldo disponível na mesma tela."
+        "palavras_chave": ["férias", "solicitar férias", "saldo de férias", "programar férias", "quando tenho direito a ferias"],
+        "resposta": "Para solicitar férias, acesse o portal de RH, escolha o período desejado e envie para aprovação do seu gestor — o processo costuma levar poucos dias úteis. Você pode consultar seu saldo de férias disponível na mesma tela, a qualquer momento. Se tiver dúvidas sobre quando tem direito a tirar férias, o RH também pode esclarecer isso diretamente."
     },
     "beneficios": {
-        "palavras_chave": ["benefícios", "vale refeição", "vale alimentação", "plano de saúde", "plano odontológico"],
-        "resposta": "As informações sobre benefícios (vale refeição, plano de saúde, plano odontológico, etc.) estão disponíveis no portal do colaborador, na seção 'Meus Benefícios'. Dúvidas específicas podem ser encaminhadas ao RH."
+        "palavras_chave": ["benefícios", "vale refeição", "vale alimentação", "plano de saúde", "plano odontológico", "beneficio"],
+        "resposta": "Todas as informações sobre seus benefícios — vale refeição, vale alimentação, plano de saúde, plano odontológico, entre outros — estão disponíveis no portal do colaborador, na seção 'Meus Benefícios'. Se tiver alguma dúvida específica, como inclusão de dependentes ou troca de plano, o RH consegue te orientar com mais detalhes."
     },
     "holerite": {
-        "palavras_chave": ["holerite", "contracheque", "recibo de pagamento", "salario", "salário"],
-        "resposta": "Seu holerite fica disponível todo mês no portal do colaborador, na seção 'Financeiro'. Caso não encontre o documento, entre em contato com o setor de folha de pagamento."
+        "palavras_chave": ["holerite", "contracheque", "recibo de pagamento", "salario", "salário", "quando cai o salario"],
+        "resposta": "Seu holerite fica disponível todo mês no portal do colaborador, na seção 'Financeiro', geralmente até o 5º dia útil. Caso não encontre o documento ou tenha alguma dúvida sobre valores, entre em contato com o setor de folha de pagamento — eles conseguem esclarecer rapidamente."
     },
     "ponto": {
-        "palavras_chave": ["ponto", "bater ponto", "registro de ponto", "esqueci de bater o ponto"],
-        "resposta": "O registro de ponto deve ser feito pelo aplicativo ou totem da empresa. Caso tenha esquecido de bater o ponto, solicite o ajuste ao seu gestor através do portal de RH."
+        "palavras_chave": ["ponto", "bater ponto", "registro de ponto", "esqueci de bater o ponto", "ajuste de ponto"],
+        "resposta": "O registro de ponto deve ser feito pelo aplicativo ou totem da empresa, no início e no fim do expediente. Se você esqueceu de bater o ponto em algum dia, não se preocupe — é só solicitar o ajuste ao seu gestor diretamente pelo portal de RH, informando o horário correto."
     },
     "contato_ti": {
-        "palavras_chave": ["contato ti", "telefone suporte", "falar com ti", "suporte tecnico", "suporte técnico"],
-        "resposta": "Você pode falar com o suporte de TI pelo ramal 4000, pelo chat interno ou abrindo um chamado diretamente por este chatbot."
+        "palavras_chave": ["contato ti", "telefone suporte", "falar com ti", "suporte tecnico", "suporte técnico", "ramal ti"],
+        "resposta": "Você pode falar com o suporte de TI de três formas: pelo ramal 4000, pelo chat interno disponível na intranet, ou abrindo um chamado diretamente por este chatbot (que é o jeito mais rápido para registrar e acompanhar seu problema)."
     },
     "horario_atendimento": {
-        "palavras_chave": ["horario", "horário", "horario de atendimento", "expediente", "funcionamento"],
-        "resposta": "O horário de atendimento da TI e do RH é de segunda a sexta-feira, das 8h às 18h. Fora desse período, chamados urgentes podem ser abertos pelo plantão de emergência."
+        "palavras_chave": ["horario", "horário", "horario de atendimento", "expediente", "funcionamento", "que horas o suporte atende"],
+        "resposta": "O horário de atendimento da TI e do RH é de segunda a sexta-feira, das 8h às 18h. Fora desse período, chamados urgentes (como sistemas fora do ar) podem ser abertos pelo plantão de emergência, cujo contato está disponível na intranet."
     },
     "acesso_sistema": {
-        "palavras_chave": ["acesso negado", "não consigo acessar", "sistema bloqueado", "usuario bloqueado", "usuário bloqueado"],
-        "resposta": "Se seu acesso a algum sistema foi negado ou bloqueado, verifique se sua senha está atualizada. Caso o problema continue, abra um chamado informando qual sistema está indisponível."
+        "palavras_chave": ["acesso negado", "não consigo acessar", "sistema bloqueado", "usuario bloqueado", "usuário bloqueado", "conta bloqueada"],
+        "resposta": "Se seu acesso a algum sistema foi negado ou bloqueado, o primeiro passo é verificar se sua senha está atualizada e correta. Contas costumam ser bloqueadas automaticamente após várias tentativas erradas, por segurança. Se o problema continuar, abra um chamado informando qual sistema está indisponível e a mensagem de erro exibida."
     },
     "onboarding": {
-        "palavras_chave": ["novo colaborador", "primeiro dia", "integração", "onboarding"],
-        "resposta": "Seja bem-vindo(a)! No primeiro dia, procure o RH para retirar seu crachá e receber as credenciais de acesso. O manual de integração está disponível no portal do colaborador."
+        "palavras_chave": ["novo colaborador", "primeiro dia", "integração", "onboarding", "comecei hoje"],
+        "resposta": "Seja muito bem-vindo(a) à empresa! No seu primeiro dia, procure o RH para retirar seu crachá e receber suas credenciais de acesso aos sistemas. O manual de integração, com tudo que você precisa saber sobre a empresa, está disponível no portal do colaborador. Qualquer dúvida no início, pode perguntar sem receio — todo mundo já passou por isso."
     },
     "reembolso": {
-        "palavras_chave": ["reembolso", "nota fiscal", "despesa", "solicitar reembolso"],
-        "resposta": "Para solicitar reembolso de despesas, anexe a nota fiscal no portal financeiro e preencha o formulário de solicitação. O prazo de análise é de até 5 dias úteis."
+        "palavras_chave": ["reembolso", "nota fiscal", "despesa", "solicitar reembolso", "reembolso de viagem"],
+        "resposta": "Para solicitar reembolso de despesas, anexe a nota fiscal no portal financeiro e preencha o formulário de solicitação, detalhando o motivo do gasto. O prazo médio de análise é de até 5 dias úteis, e o valor aprovado costuma sair na folha de pagamento seguinte."
     },
     "notebook": {
-        "palavras_chave": ["notebook", "computador", "equipamento", "trocar notebook", "notebook quebrado"],
-        "resposta": "Problemas com notebook ou equipamento corporativo devem ser reportados através de um chamado com a categoria 'Equipamento', informando o modelo e o defeito apresentado."
+        "palavras_chave": ["notebook", "computador", "equipamento", "trocar notebook", "notebook quebrado", "notebook lento"],
+        "resposta": "Problemas com notebook ou outro equipamento corporativo devem ser reportados através de um chamado com a categoria 'Equipamento', informando o modelo e descrevendo o defeito com o máximo de detalhes possível — isso agiliza bastante o diagnóstico da equipe técnica."
     },
     "sala_reuniao": {
-        "palavras_chave": ["sala de reunião", "reservar sala", "agendar sala"],
-        "resposta": "Para reservar uma sala de reunião, utilize o sistema de agendamento corporativo disponível no calendário compartilhado."
+        "palavras_chave": ["sala de reunião", "reservar sala", "agendar sala", "sala ocupada"],
+        "resposta": "Para reservar uma sala de reunião, utilize o sistema de agendamento corporativo disponível no calendário compartilhado da empresa. Lembre-se de cancelar a reserva caso a reunião não aconteça, para liberar o espaço para outras equipes."
     },
     "crachao": {
-        "palavras_chave": ["crachá", "cracha", "cartão de acesso", "perdi o crachá"],
-        "resposta": "Em caso de perda do crachá, comunique imediatamente a portaria e abra um chamado com o RH para emissão de uma segunda via."
+        "palavras_chave": ["crachá", "cracha", "cartão de acesso", "perdi o crachá", "crachá não funciona"],
+        "resposta": "Em caso de perda do crachá, comunique a portaria imediatamente por segurança, e abra um chamado com o RH para solicitar a emissão de uma segunda via. Se o crachá simplesmente parou de funcionar (mas você ainda está com ele), o problema costuma ser resolvido rapidinho na própria portaria."
     },
     "desligamento": {
-        "palavras_chave": ["desligamento", "demissão", "rescisão", "aviso previo", "aviso prévio"],
-        "resposta": "Questões relacionadas a desligamento ou rescisão contratual devem ser tratadas diretamente com o RH, que fornecerá todas as orientações e prazos legais."
+        "palavras_chave": ["desligamento", "demissão", "rescisão", "aviso previo", "aviso prévio", "pedido de demissão"],
+        "resposta": "Questões relacionadas a desligamento, rescisão contratual ou aviso prévio devem ser tratadas diretamente com o RH, que vai te orientar sobre todo o processo, prazos legais e documentação necessária. É um assunto importante, então não hesite em agendar uma conversa presencial se preferir."
+    },
+    "telefone_corporativo": {
+        "palavras_chave": ["celular corporativo", "telefone da empresa", "chip corporativo", "linha corporativa"],
+        "resposta": "Solicitações de celular corporativo, troca de aparelho ou problemas com a linha devem ser abertas via chamado na categoria 'Equipamento', com a TI. Em caso de perda ou roubo do aparelho, avise imediatamente para que a linha seja bloqueada por segurança."
+    },
+    "acesso_predio": {
+        "palavras_chave": ["acesso ao predio", "catraca", "visitante", "liberar visitante", "cadastrar visitante"],
+        "resposta": "Para cadastrar um visitante, acesse o sistema de portaria com antecedência e informe nome completo e documento — isso agiliza a liberação na chegada. Problemas na catraca ou leitor de crachá devem ser reportados diretamente à portaria ou à equipe de facilities."
+    },
+    "material_escritorio": {
+        "palavras_chave": ["material de escritório", "papel", "caneta", "suprimentos", "pedido de material"],
+        "resposta": "Pedidos de material de escritório (papel, canetas, cartuchos, entre outros) podem ser feitos através do portal de compras internas ou solicitados diretamente ao setor de facilities. Pedidos maiores costumam levar alguns dias para chegar, então é bom se planejar com antecedência."
+    },
+    "ar_condicionado": {
+        "palavras_chave": ["ar condicionado", "temperatura", "sala fria", "sala quente", "clima da sala"],
+        "resposta": "Problemas de temperatura no ambiente (muito frio ou muito quente) devem ser reportados ao setor de facilities, que consegue ajustar remotamente em muitos casos. Se o ar condicionado estiver com defeito visível (barulho, vazamento, etc.), é importante informar isso no chamado."
+    },
+    "estacionamento": {
+        "palavras_chave": ["estacionamento", "vaga", "vaga de garagem", "cadastrar veículo"],
+        "resposta": "Para solicitar uma vaga de estacionamento ou cadastrar seu veículo, entre em contato com o RH ou facilities, dependendo da política da sua unidade. Algumas unidades têm lista de espera, então vale consultar a disponibilidade atual antes de fazer planos."
+    },
+    "treinamento": {
+        "palavras_chave": ["treinamento", "curso", "capacitação", "certificação", "trilha de aprendizado"],
+        "resposta": "A empresa disponibiliza trilhas de aprendizado e cursos através da plataforma de treinamentos, acessível pelo portal do colaborador. Se você busca uma capacitação específica que não está disponível na plataforma, converse com seu gestor sobre possibilidades de custeio ou parceria com instituições externas."
+    },
+    "avaliacao_desempenho": {
+        "palavras_chave": ["avaliação de desempenho", "feedback", "avaliação 360", "PDI", "plano de desenvolvimento"],
+        "resposta": "As avaliações de desempenho costumam ocorrer em ciclos definidos pelo RH, geralmente semestrais ou anuais, e incluem autoavaliação, avaliação do gestor e, em alguns casos, feedback 360. Seu Plano de Desenvolvimento Individual (PDI) pode ser acessado e atualizado no portal do colaborador junto com seu gestor."
+    },
+    "home_office": {
+        "palavras_chave": ["home office", "trabalho remoto", "trabalhar de casa", "politica de home office"],
+        "resposta": "A política de home office varia conforme o cargo e a área, e as diretrizes completas estão disponíveis no portal do colaborador. Em geral, é necessário alinhamento prévio com o gestor sobre os dias remotos, e o acesso aos sistemas deve ser sempre feito via VPN."
+    },
+    "assinatura_eletronica": {
+        "palavras_chave": ["assinatura eletrônica", "assinar documento", "documento digital", "certificado digital"],
+        "resposta": "Documentos que exigem assinatura eletrônica são enviados através da plataforma corporativa de assinaturas digitais, e você recebe uma notificação por e-mail quando há algo pendente para assinar. Caso tenha problemas para acessar ou assinar um documento, abra um chamado informando o nome do documento."
+    },
+    "sistema_erp": {
+        "palavras_chave": ["erp", "sistema de gestão", "sistema financeiro", "sistema não abre", "erro no sistema"],
+        "resposta": "Problemas de acesso ou erros no sistema ERP devem ser reportados via chamado, informando a mensagem de erro exibida e, se possível, um print da tela — isso ajuda bastante a equipe técnica a identificar a causa mais rápido. Antes de abrir o chamado, vale tentar sair e entrar novamente no sistema."
+    },
+    "compliance": {
+        "palavras_chave": ["compliance", "denúncia", "canal de ética", "conduta", "assedio"],
+        "resposta": "Questões relacionadas a compliance, ética ou situações de assédio podem ser reportadas de forma confidencial pelo Canal de Ética da empresa, disponível na intranet. Todas as denúncias são tratadas com sigilo e seguem um processo formal de apuração."
+    },
+    "juridico": {
+        "palavras_chave": ["jurídico", "contrato", "assessoria jurídica", "duvida legal"],
+        "resposta": "Dúvidas relacionadas a contratos ou questões legais que envolvam a empresa devem ser encaminhadas ao setor Jurídico, através do e-mail institucional ou abrindo um chamado na categoria 'Jurídico'. Eles costumam responder em até 2 dias úteis."
+    },
+    "convenio_medico": {
+        "palavras_chave": ["convenio medico", "convênio médico", "carteirinha do plano", "consulta médica"],
+        "resposta": "Sua carteirinha do convênio médico pode ser acessada digitalmente pelo aplicativo da operadora ou solicitada em via física através do RH. Para dúvidas sobre cobertura, rede credenciada ou agendamento de consultas, o canal de atendimento da operadora é o mais indicado."
+    },
+    "reajuste_salarial": {
+        "palavras_chave": ["reajuste salarial", "aumento de salário", "promoção", "mudança de cargo"],
+        "resposta": "Assuntos relacionados a reajuste salarial, promoção ou mudança de cargo geralmente são discutidos durante os ciclos de avaliação de desempenho, junto ao seu gestor e ao RH. Se tiver dúvidas sobre o processo específico da sua área, o RH pode te explicar como funciona por aqui."
+    },
+    "credenciais_sistema": {
+        "palavras_chave": ["usuario e senha", "login", "credenciais", "primeiro acesso", "criar usuario"],
+        "resposta": "Para seu primeiro acesso aos sistemas da empresa, você recebe um e-mail de boas-vindas com usuário temporário e instruções para criar sua senha definitiva. Caso não tenha recebido esse e-mail ou tenha perdido as credenciais, abra um chamado com a TI informando seu nome completo e departamento."
+    },
+    "monitor_teclado_mouse": {
+        "palavras_chave": ["monitor", "teclado", "mouse", "periférico", "monitor não liga", "teclado não funciona"],
+        "resposta": "Problemas com monitor, teclado, mouse ou outros periféricos devem ser reportados via chamado na categoria 'Equipamento'. Antes de abrir o chamado, vale testar o cabo em outra porta e, se possível, em outro computador, para ajudar a identificar se o defeito é no periférico ou na máquina."
+    },
+    "licenca_software": {
+        "palavras_chave": ["licença", "licença expirada", "office expirado", "renovar licença"],
+        "resposta": "Se um software está pedindo renovação de licença ou apresentando aviso de expiração, abra um chamado com a TI informando o nome do programa. A renovação costuma ser automática para a maioria das licenças corporativas, mas às vezes é preciso um ajuste manual no cadastro."
+    },
+    "backup_email": {
+        "palavras_chave": ["caixa de email cheia", "email cheio", "limpar email", "espaço no email"],
+        "resposta": "Se sua caixa de e-mail estiver cheia, o primeiro passo é excluir mensagens antigas com anexos grandes ou movê-las para uma pasta de arquivo local. Caso precise de um aumento de espaço permanente, abra um chamado com a TI explicando sua necessidade."
+    },
+    "impressao_colorida": {
+        "palavras_chave": ["impressão colorida", "cota de impressão", "limite de impressão", "impressão em cores"],
+        "resposta": "Algumas impressoras corporativas têm cota limitada de impressões coloridas por colaborador, conforme a política de sustentabilidade da empresa. Se você atingiu o limite e precisa imprimir algo colorido com urgência, um chamado para o setor de facilities pode liberar uma exceção pontual."
+    },
+    "sistema_ponto_eletronico": {
+        "palavras_chave": ["ponto eletronico", "relogio de ponto", "totem não funciona", "erro ao bater ponto"],
+        "resposta": "Se o totem ou aplicativo de ponto não estiver funcionando no momento do registro, anote o horário exato e comunique seu gestor o quanto antes, para que o ajuste seja feito manualmente depois. Problemas recorrentes no equipamento devem ser reportados via chamado com a TI."
+    },
+    "cartao_ponto_correcao": {
+        "palavras_chave": ["banco de horas", "hora extra", "compensação de horas", "corrigir ponto"],
+        "resposta": "Dúvidas sobre banco de horas, hora extra ou compensação devem ser tratadas com seu gestor direto, que tem visibilidade do seu saldo. Para correções de marcações incorretas, o ajuste é feito pelo portal de RH, mediante aprovação do gestor."
+    },
+    "seguro_de_vida": {
+        "palavras_chave": ["seguro de vida", "seguro corporativo", "beneficiario do seguro"],
+        "resposta": "O seguro de vida corporativo é um benefício padrão para todos os colaboradores efetivos, e a apólice completa está disponível no portal do colaborador. Para atualizar o beneficiário indicado, entre em contato com o RH e solicite o formulário de atualização."
+    },
+    "vale_transporte": {
+        "palavras_chave": ["vale transporte", "cartão de transporte", "recarga de vale transporte"],
+        "resposta": "O vale transporte é recarregado automaticamente todo mês, geralmente até o 5º dia útil. Se você mudou de endereço ou de rota e precisa ajustar o valor, informe o RH com antecedência para que o cálculo seja atualizado no próximo ciclo."
+    },
+    "mudanca_endereco": {
+        "palavras_chave": ["mudei de endereço", "atualizar endereço", "mudança de endereço"],
+        "resposta": "Para atualizar seu endereço cadastral, acesse o portal do colaborador na seção de dados pessoais. Isso é importante não só para correspondências, mas também pode impactar benefícios como vale transporte, então não esqueça de manter sempre atualizado."
+    },
+    "impostos_ir": {
+        "palavras_chave": ["informe de rendimentos", "imposto de renda", "declaração do ir"],
+        "resposta": "O Informe de Rendimentos para a declaração do Imposto de Renda fica disponível todo ano, geralmente a partir de fevereiro, na seção 'Financeiro' do portal do colaborador. Se você não encontrar o documento no prazo, entre em contato com o setor de folha de pagamento."
+    },
+    "cracha_visitante_evento": {
+        "palavras_chave": ["evento na empresa", "organizar evento", "reservar auditorio", "espaço para evento"],
+        "resposta": "Para organizar um evento interno ou reservar o auditório, entre em contato com o setor de facilities com pelo menos alguns dias de antecedência, informando data, horário e número esperado de participantes."
+    },
+    "politica_ferramentas_ia": {
+        "palavras_chave": ["uso de ia", "chatgpt no trabalho", "politica de inteligencia artificial", "posso usar ia"],
+        "resposta": "O uso de ferramentas de Inteligência Artificial no trabalho segue uma política específica da empresa, disponível na intranet, que trata principalmente de segurança da informação e confidencialidade de dados. Em caso de dúvida sobre uma ferramenta específica, é sempre bom confirmar com a área de Segurança da Informação antes de usar dados corporativos nela."
+    },
+    "seguranca_informacao": {
+        "palavras_chave": ["phishing", "email suspeito", "golpe", "link suspeito", "segurança da informação"],
+        "resposta": "Se você recebeu um e-mail suspeito ou um link estranho, não clique em nada — encaminhe a mensagem para o time de Segurança da Informação e depois exclua. Esse tipo de alerta rápido ajuda a proteger toda a empresa contra tentativas de phishing e golpes."
+    },
+    "plano_carreira": {
+        "palavras_chave": ["plano de carreira", "trilha de carreira", "próximo cargo", "crescimento profissional"],
+        "resposta": "As trilhas de carreira disponíveis para sua área podem ser consultadas no portal do colaborador, na seção 'Desenvolvimento'. Vale conversar com seu gestor durante os ciclos de avaliação para entender melhor os próximos passos e o que é esperado para uma eventual promoção."
     }
 }
