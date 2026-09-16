@@ -11,8 +11,12 @@ def home():
 @app.route('/perguntar', methods=['POST'])
 def perguntar():
     pergunta = request.form['pergunta']
+    if not pergunta.strip():
+        return render_template('resultado.html', titulo="Ops!",
+                                conteudo="Por favor, digite uma pergunta.", erro=True)
+
     resposta = chatbot.perguntar(pergunta)
-    return resposta
+    return render_template('resultado.html', titulo="Resposta", conteudo=resposta, erro=False)
 
 @app.route('/abrir-chamado', methods=['POST'])
 def abrir_chamado():

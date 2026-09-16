@@ -14,23 +14,23 @@
             margin: 0;
             padding: 40px 20px;
             min-height: 100vh;
-            background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 50%, #dbeafe 100%);
-            color: #1e293b;
+            background: radial-gradient(circle at 20% 0%, #1e2947 0%, #0b1120 55%, #05070d 100%);
+            color: #e2e8f0;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
         .card {
-            background: rgba(255, 255, 255, 0.75);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.6);
+            background: rgba(30, 41, 59, 0.65);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(148, 163, 184, 0.15);
             border-radius: 16px;
             padding: 32px;
             max-width: 520px;
             width: 100%;
-            box-shadow: 0 8px 24px rgba(30, 58, 95, 0.1);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
         }
 
         .card-icon {
@@ -45,44 +45,45 @@
         }
 
         .icon-sucesso {
-            background: #dcfce7;
+            background: rgba(34, 197, 94, 0.15);
         }
 
         .icon-erro {
-            background: #fee2e2;
+            background: rgba(239, 68, 68, 0.15);
         }
 
         h1 {
             font-size: 1.2rem;
-            color: #1e3a5f;
+            color: #f1f5f9;
             margin: 0 0 16px 0;
         }
 
         .conteudo {
             font-size: 0.95rem;
             line-height: 1.7;
-            color: #334155;
+            color: #cbd5e1;
         }
 
         .conteudo strong {
-            color: #1e3a5f;
+            color: #f1f5f9;
         }
 
         a.voltar {
             display: inline-block;
             margin-top: 24px;
-            background: linear-gradient(135deg, #2e6ff2, #1d54c9);
+            background: linear-gradient(135deg, #4f7cff, #3b63d6);
             color: white;
             text-decoration: none;
             padding: 10px 20px;
             border-radius: 10px;
             font-size: 0.9rem;
             font-weight: 600;
-            transition: transform 0.15s ease;
+            transition: transform 0.15s ease, filter 0.15s ease;
         }
 
         a.voltar:hover {
             transform: translateY(-1px);
+            filter: brightness(1.08);
         }
     </style>
 </head>
