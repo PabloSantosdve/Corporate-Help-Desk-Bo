@@ -12,6 +12,7 @@ Este é um projeto de **aprendizado e portfólio**: toda a lógica é implementa
 - **Abertura de Chamados**: registra nome, departamento, categoria e descrição do problema, gerando um número de protocolo único automaticamente.
 - **Consulta de Chamados**: permite consultar um chamado já aberto pelo número ou protocolo completo (ex: `8` ou `TICKET-0008`), exibindo status, categoria, descrição e data de abertura.
 - **Histórico de Interações**: toda pergunta feita ao chatbot é registrada automaticamente, com data e horário.
+- **Tema escuro**: as versões desktop (Tkinter) e web (Flask) têm uma identidade visual consistente, com cards translúcidos (glassmorphism) sobre um fundo em gradiente escuro.
 
 Disponível em **três interfaces diferentes**, todas reutilizando a mesma lógica de negócio: terminal, aplicação desktop (Tkinter) e aplicação web (Flask).
 
@@ -34,8 +35,8 @@ Disponível em **três interfaces diferentes**, todas reutilizando a mesma lógi
 corporate-helpdesk-bot/
 │
 ├── main.py                 # Ponto de entrada - versão terminal
-├── interface.py             # Ponto de entrada - versão com interface gráfica (Tkinter)
-├── app.py                   # Ponto de entrada - versão web (Flask)
+├── interface.py             # Ponto de entrada - versão com interface gráfica (Tkinter, tema escuro)
+├── app.py                   # Ponto de entrada - versão web (Flask, tema escuro)
 │
 ├── chatbot/
 │   ├── chatbot.py            # Classe ChatBot (orquestradora - une todos os módulos)
@@ -48,11 +49,11 @@ corporate-helpdesk-bot/
 │   └── database.py            # Scripts de criação de tabelas e migração inicial de dados
 │
 ├── templates/
-│   ├── index.html              # Página inicial da versão web (formulários)
-│   └── resultado.html          # Página de resultado reutilizável (sucesso/erro)
+│   ├── index.html              # Página inicial da versão web (formulários, tema escuro)
+│   └── resultado.html          # Página de resultado reutilizável (sucesso/erro, tema escuro)
 │
 └── utils/
-    └── file_manager.py         # Funções genéricas de leitura/escrita em JSON (uso auxiliar)
+    └── file_manager.py         # Funções de leitura/escrita em JSON (legado — não é mais usado após a migração para SQLite, mantido como registro da evolução do projeto)
 ```
 
 ### Modelo de dados (SQLite)
@@ -71,6 +72,7 @@ O banco é composto por 4 tabelas:
 - **Persistência em banco de dados relacional**: os dados são armazenados em SQLite, com uso de `PRIMARY KEY`, `FOREIGN KEY` e `AUTOINCREMENT` para garantir integridade e evitar duplicidade — substituindo a abordagem inicial baseada em arquivos JSON.
 - **Consultas parametrizadas**: todas as operações de banco usam placeholders (`?`) em vez de concatenação de strings, prevenindo vulnerabilidades de SQL Injection.
 - **Template de resultado reutilizável**: a versão web usa uma única página (`resultado.html`) para exibir qualquer resposta (pergunta, abertura ou consulta de chamado), alternando entre estado de sucesso e erro.
+- **Rolagem na interface desktop**: a versão Tkinter usa `Canvas` + `Scrollbar` para permitir rolar o conteúdo, já que a tela cresceu além do espaço de uma janela fixa.
 
 ---
 
@@ -118,12 +120,20 @@ Depois, acesse `http://127.0.0.1:5000` no navegador.
 - Tratamento de exceções (`try`/`except`)
 - Programação Orientada a Objetos (classes, `__init__`, `self`)
 - Modularização e organização de código em múltiplos arquivos
-- Interfaces gráficas com Tkinter (widgets, eventos, layout com `Frame`)
+- Interfaces gráficas com Tkinter (widgets, eventos, layout com `Frame`, rolagem com `Canvas`/`Scrollbar`)
 - Desenvolvimento web com Flask (rotas, métodos HTTP, formulários, templates Jinja2)
-- HTML e CSS aplicados a uma interface moderna (glassmorphism, responsividade)
+- HTML e CSS aplicados a uma interface moderna e escura (glassmorphism, gradientes, responsividade)
 - Banco de dados relacional com SQLite (`CREATE TABLE`, `INSERT`, `SELECT`, `JOIN`, `PRIMARY KEY`, `FOREIGN KEY`)
 - Prevenção de SQL Injection com consultas parametrizadas
 - Versionamento de código com Git e GitHub
+
+---
+
+## ✅ Status do projeto
+
+Projeto concluído com as quatro versões planejadas: terminal, interface gráfica desktop, aplicação web e persistência em banco de dados relacional — todas com a mesma lógica de negócio reutilizada através da classe orquestradora `ChatBot`.
+
+O código está aberto a expansões futuras (como login/autenticação ou deploy em produção), mas o escopo atual já demonstra, de ponta a ponta, a evolução de um projeto simples em terminal até uma aplicação web com banco de dados, mantendo boas práticas de arquitetura ao longo de toda a jornada.
 
 ---
 
